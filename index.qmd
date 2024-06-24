@@ -4,7 +4,13 @@ execute:
   echo: false
 ---
 
-This website is a data analysis project that compares equity prices changes (ETFs) to various date and time intervals.  The analysis will be primarily visual and descriptive.d
+This website is a data analysis project that compares equity prices changes (ETFs) to various date and time intervals.  The analysis will be primarily visual and descriptive.
+
+The data for this project was obtained from (Stooq)[https://stooq.com/db/h/].  It provides free historical market price data for various markets such as U.S. NASADQ, U.S. NYSE, U.K, Japan, and Hong Kong among others.  Each symbol's available data is storied in a single file.  Data is available for daily, hourly, and five minute intervals.
+
+No modification to the data has been performed at present and data is being used as available through as_tibble(read.csv()).  Data import process needs to be completed that will read the data from all symbols, rename column name so that they can be used in R, and merge all symbol data into a single data frame or tibble.  Additional columns will then be added that will contain the calculated price change delta for various time periods, e.g. day, week, month, quarter, year, etc.
+
+While trend for prices over the long term is expected to increase, it is anticipated that no apparent correlation will be observed for various date and time intervals.
 
 ```{r}
 #| label: setup
@@ -26,3 +32,4 @@ aesr |>
     )
 ```
 
+As expected, while prices increase in the long term, no correlation is observed visually for the various date and time intervals that were studied.
