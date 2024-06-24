@@ -2,4 +2,8 @@
 title: "About"
 ---
 
-About this site
+I'm Ashton Vaz, a student in David Kane's Data Science Bootcamp.  My github repositories are available [here](https://github.coom/ashtonvaz) and I can be contacted at [ashton.vaz@gmail.com](mailto:ashton.vaz@gmail.com)
+
+This repository contains the RStudio project files of a data analysis project that compares equity prices changes to various date and time intervals.  The git repository of this project i [here](https://github.com/ashtonvaz/analysis-pricechange)
+
+This project was created as a part of [Kane’s Data Science Bootcamp](https://bootcamp.davidkane.info/).

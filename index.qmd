@@ -1,7 +1,27 @@
 ---
 title: "Index"
+execute:
+  echo: false
 ---
 
-This is a Quarto website.
+This website is a data analysis project that compares equity prices changes (ETFs) to various date and time intervals.  The analysis will be primarily visual and descriptive.d
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+```{r}
+#| label: setup
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r}
+aesr <- as_tibble(read.csv("data/daily/us/nyse\ etfs/1/aesr.us.txt", check.names = FALSE))
+aesr |>
+  drop_na() |>
+  ggplot(aes(x = `<DATE>`, y = `<OPEN>`)) +
+    geom_point() +
+    labs(
+      title = "Analysis of equity price changes per day - NYSE ETF - AESR",
+      x = "Date",
+      y = "Opening price"
+    )
+```
+
