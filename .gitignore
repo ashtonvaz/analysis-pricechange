@@ -7,3 +7,10 @@
 
 *.Rproj
 _site
+
+/_publish.yml
+/*_files
+*.rds
+*.png
+*.bmp
+*.gif
