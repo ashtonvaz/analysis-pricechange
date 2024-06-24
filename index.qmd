@@ -1,5 +1,5 @@
 ---
-title: "Index"
+title: ""
 execute:
   echo: false
 ---
@@ -8,6 +8,7 @@ This website is a data analysis project that compares equity prices changes (ETF
 
 ```{r}
 #| label: setup
+#| warning: false
 library(tidyverse)
 library(ggplot2)
 ```
